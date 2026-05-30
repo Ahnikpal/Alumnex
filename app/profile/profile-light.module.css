@@ -1,0 +1,183 @@
+.profileWrapper {
+    --bg-main: #f8fafc;
+    --bg-white: #ffffff;
+    --accent-blue: #3b82f6;
+    --accent-cyan: #06b6d4;
+    --text-primary: #1e293b;
+    --text-secondary: #64748b;
+    --border-light: #e2e8f0;
+    --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+    --shadow-soft: 0 20px 25px -5px rgb(0 0 0 / 0.05);
+
+    background: var(--bg-main);
+    min-height: 100vh;
+    color: var(--text-primary);
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+.sidebar {
+    background: var(--bg-white) !important;
+    border-right: 1px solid var(--border-light) !important;
+    height: 100vh !important;
+    z-index: 50 !important;
+}
+
+.sidebarItem {
+    display: flex !important;
+    align-items: center !important;
+    gap: 12px !important;
+    padding: 10px 16px !important;
+    border-radius: 12px !important;
+    color: var(--text-secondary) !important;
+    font-weight: 500 !important;
+}
+
+.sidebarActive {
+    background: #eff6ff !important;
+    color: var(--accent-blue) !important;
+    font-weight: 600 !important;
+}
+
+.card {
+    background: var(--bg-white);
+    border: 1px solid var(--border-light);
+    border-radius: 20px;
+    padding: 24px;
+    box-shadow: var(--shadow-sm);
+    transition: all 0.3s ease;
+}
+
+.cardHover:hover {
+    box-shadow: var(--shadow-soft);
+    transform: translateY(-2px);
+}
+
+.headerCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 40px 24px;
+    gap: 20px;
+}
+
+.avatarContainer {
+    position: relative;
+    width: 140px;
+    height: 140px;
+    border-radius: 30px;
+    overflow: hidden;
+    border: 4px solid var(--bg-white);
+    box-shadow: var(--shadow-md);
+}
+
+.avatarImage {
+    object-fit: cover;
+}
+
+.badge {
+    background: #f1f5f9;
+    color: var(--text-secondary);
+    padding: 6px 12px;
+    border-radius: 10px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.skillBadge {
+    background: #eff6ff;
+    color: var(--accent-blue);
+    padding: 8px 16px;
+    border-radius: 12px;
+    font-size: 14px;
+    font-weight: 600;
+    border: 1px solid #dbeafe;
+    transition: all 0.2s ease;
+}
+
+.skillBadge:hover {
+    background: #dbeafe;
+    transform: scale(1.05);
+}
+
+.btnPrimary {
+    background: var(--accent-blue);
+    color: white;
+    padding: 12px 24px;
+    border-radius: 12px;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    box-shadow: 0 4px 14px 0 rgba(59, 130, 246, 0.3);
+    transition: all 0.2s ease;
+}
+
+.btnPrimary:hover {
+    background: #2563eb;
+    transform: translateY(-1px);
+    box-shadow: 0 6px 20px rgba(59, 130, 246, 0.4);
+}
+
+.btnOutline {
+    border: 1px solid var(--border-light);
+    color: var(--text-primary);
+    padding: 12px 24px;
+    border-radius: 12px;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.2s ease;
+}
+
+.btnOutline:hover {
+    background: #f8fafc;
+    border-color: #cbd5e1;
+}
+
+.sectionTitle {
+    font-size: 18px;
+    font-weight: 800;
+    color: var(--text-primary);
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.progressCircle {
+    transform: rotate(-90deg);
+}
+
+.progressCircleBg {
+    stroke: #f1f5f9;
+}
+
+.progressCircleVal {
+    stroke: var(--accent-blue);
+    transition: stroke-dashoffset 1s ease-out;
+    filter: drop-shadow(0 0 4px rgba(59, 130, 246, 0.2));
+}
+
+.topNav {
+    background: rgba(248, 250, 252, 0.8);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border-light);
+}
+
+.searchInput {
+    background: #f1f5f9;
+    border: 1px solid transparent;
+    border-radius: 12px;
+    padding: 10px 16px 10px 40px;
+    width: 100%;
+    transition: all 0.2s ease;
+    font-size: 14px;
+}
+
+.searchInput:focus {
+    background: var(--bg-white);
+    border-color: var(--accent-blue);
+    outline: none;
+}

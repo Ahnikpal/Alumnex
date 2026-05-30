@@ -1,0 +1,1020 @@
+/* ==================== ANIMATION-ONLY CSS ====================
+   Add this to your existing styles.css or include separately
+   ============================================================= */
+
+/* ==================== ADVANCED TEXT ANIMATIONS ==================== */
+
+@keyframes textRevealWord {
+    0% {
+        opacity: 0;
+        transform: translateY(20px) scale(0.95);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+@keyframes wordBounceIn {
+    0% {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes highlightGlowPulse {
+
+    0%,
+    100% {
+        text-shadow: 0 0 10px rgba(167, 139, 250, 0.4), 0 0 20px rgba(124, 58, 237, 0.2);
+    }
+
+    50% {
+        text-shadow: 0 0 20px rgba(167, 139, 250, 0.8), 0 0 40px rgba(124, 58, 237, 0.6), 0 0 60px rgba(167, 139, 250, 0.3);
+    }
+}
+
+@keyframes textFadeSlideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes badgePulseGlow {
+
+    0%,
+    100% {
+        box-shadow: 0 0 10px rgba(167, 139, 250, 0.3);
+        transform: scale(1);
+    }
+
+    50% {
+        box-shadow: 0 0 20px rgba(167, 139, 250, 0.5);
+        transform: scale(1.03);
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes gradientTextShift {
+    0% {
+        background: linear-gradient(90deg, #3B82F6, #8B5CF6);
+        background-size: 200% 100%;
+    }
+
+    50% {
+        background: linear-gradient(90deg, #8B5CF6, #3B82F6);
+        background-size: 200% 100%;
+    }
+
+    100% {
+        background: linear-gradient(90deg, #3B82F6, #8B5CF6);
+        background-size: 200% 100%;
+    }
+}
+
+@keyframes subtitleShimmer {
+    0% {
+        background-position: -1000px 0;
+    }
+
+    100% {
+        background-position: 1000px 0;
+    }
+}
+
+@keyframes accentUnderline {
+    0% {
+        background: linear-gradient(90deg, transparent 0%, transparent 100%);
+    }
+
+    50% {
+        background: linear-gradient(90deg, #8B5CF6 0%, #3B82F6 100%);
+    }
+
+    100% {
+        background: linear-gradient(90deg, transparent 0%, transparent 100%);
+    }
+}
+
+/* ==================== ULTRA MEGA ADVANCED TEXT ANIMATIONS ==================== */
+
+@keyframes letterByLetter {
+    0% {
+        opacity: 0;
+        transform: translateY(10px) rotateX(90deg);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0) rotateX(0deg);
+    }
+}
+
+@keyframes waveMotion {
+
+    0%,
+    100% {
+        transform: translateY(0px);
+    }
+
+    25% {
+        transform: translateY(-5px);
+    }
+
+    50% {
+        transform: translateY(0px);
+    }
+
+    75% {
+        transform: translateY(5px);
+    }
+}
+
+@keyframes textGlitch {
+    0% {
+        text-shadow: 2px 0 #8B5CF6, -2px 0 #3B82F6;
+        transform: translate(0);
+    }
+
+    20% {
+        text-shadow: 2px 0 #8B5CF6, -2px 0 #3B82F6;
+        transform: translate(-2px, 2px);
+    }
+
+    40% {
+        text-shadow: -2px 0 #8B5CF6, 2px 0 #3B82F6;
+        transform: translate(-2px, -2px);
+    }
+
+    60% {
+        text-shadow: 2px 0 #3B82F6, -2px 0 #8B5CF6;
+        transform: translate(2px, 2px);
+    }
+
+    80% {
+        text-shadow: -2px 0 #3B82F6, 2px 0 #8B5CF6;
+        transform: translate(2px, -2px);
+    }
+
+    100% {
+        text-shadow: 2px 0 #8B5CF6, -2px 0 #3B82F6;
+        transform: translate(0);
+    }
+}
+
+@keyframes textPop {
+    0% {
+        opacity: 0;
+        transform: scale(0.5) rotate(-10deg);
+    }
+
+    50% {
+        transform: scale(1.1) rotate(5deg);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1) rotate(0deg);
+    }
+}
+
+@keyframes textFlip3D {
+    0% {
+        transform: perspective(600px) rotateY(90deg);
+        opacity: 0;
+    }
+
+    100% {
+        transform: perspective(600px) rotateY(0deg);
+        opacity: 1;
+    }
+}
+
+@keyframes letterSpacingWave {
+
+    0%,
+    100% {
+        letter-spacing: 0px;
+    }
+
+    50% {
+        letter-spacing: 3px;
+    }
+}
+
+@keyframes neonGlow {
+
+    0%,
+    100% {
+        text-shadow:
+            0 0 5px rgba(167, 139, 250, 0.5),
+            0 0 10px rgba(167, 139, 250, 0.3);
+    }
+
+    50% {
+        text-shadow:
+            0 0 15px rgba(167, 139, 250, 0.8),
+            0 0 30px rgba(124, 58, 237, 0.6),
+            0 0 45px rgba(167, 139, 250, 0.4),
+            0 0 60px rgba(124, 58, 237, 0.2);
+    }
+}
+
+@keyframes typeWriter {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blinkCursor {
+    50% {
+        border-color: transparent;
+    }
+}
+
+@keyframes skewText {
+
+    0%,
+    100% {
+        transform: skewX(0deg);
+    }
+
+    25% {
+        transform: skewX(-5deg);
+    }
+
+    75% {
+        transform: skewX(5deg);
+    }
+}
+
+@keyframes rainbowText {
+    0% {
+        color: #3B82F6;
+    }
+
+    25% {
+        color: #8B5CF6;
+    }
+
+    50% {
+        color: #EC4899;
+    }
+
+    75% {
+        color: #10B981;
+    }
+
+    100% {
+        color: #3B82F6;
+    }
+}
+
+@keyframes pulseScale {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+/* ==================== SUBTITLE MOVING ANIMATIONS ==================== */
+
+@keyframes subtitleFloat {
+
+    0%,
+    100% {
+        transform: translateY(0px);
+    }
+
+    25% {
+        transform: translateY(-8px);
+    }
+
+    50% {
+        transform: translateY(0px);
+    }
+
+    75% {
+        transform: translateY(8px);
+    }
+}
+
+@keyframes subtitleShimmerWave {
+
+    0%,
+    100% {
+        color: var(--text-secondary);
+        text-shadow: 0 0 5px rgba(167, 139, 250, 0.1);
+    }
+
+    25% {
+        color: var(--text-secondary);
+        text-shadow: 0 0 15px rgba(167, 139, 250, 0.3), 0 0 25px rgba(124, 58, 237, 0.1);
+    }
+
+    50% {
+        color: var(--text-secondary);
+        text-shadow: 0 0 25px rgba(124, 58, 237, 0.5), 0 0 40px rgba(167, 139, 250, 0.2);
+    }
+
+    75% {
+        color: var(--text-secondary);
+        text-shadow: 0 0 15px rgba(167, 139, 250, 0.3), 0 0 25px rgba(124, 58, 237, 0.1);
+    }
+}
+
+@keyframes subtitleGlowPulse {
+
+    0%,
+    100% {
+        filter: brightness(1);
+    }
+
+    50% {
+        filter: brightness(1.1);
+    }
+}
+
+@keyframes subtitleSway {
+
+    0%,
+    100% {
+        transform: translateX(0px);
+    }
+
+    25% {
+        transform: translateX(-3px);
+    }
+
+    75% {
+        transform: translateX(3px);
+    }
+}
+
+@keyframes subtitleBreathe {
+
+    0%,
+    100% {
+        opacity: 0.9;
+        letter-spacing: normal;
+    }
+
+    50% {
+        opacity: 1;
+        letter-spacing: 0.5px;
+    }
+}
+
+.page-transition-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #3B82F6 0%, #8B5CF6 100%);
+    z-index: 99999;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    pointer-events: none;
+}
+
+.page-transition-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* ==================== TOAST NOTIFICATIONS ==================== */
+.toast-notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 16px 20px;
+    border-radius: 12px;
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+    z-index: 100000;
+    transform: translateX(120%);
+    transition: transform 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    max-width: 400px;
+}
+
+.toast-notification.show {
+    transform: translateX(0);
+}
+
+.toast-success {
+    background: linear-gradient(135deg, #10B981 0%, #059669 100%);
+}
+
+.toast-error {
+    background: linear-gradient(135deg, #EF4444 0%, #DC2626 100%);
+}
+
+.toast-warning {
+    background: linear-gradient(135deg, #F59E0B 0%, #D97706 100%);
+}
+
+.toast-info {
+    background: linear-gradient(135deg, #3B82F6 0%, #2563EB 100%);
+}
+
+.toast-notification i {
+    font-size: 18px;
+}
+
+.toast-close {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+    margin-left: auto;
+    padding: 4px;
+}
+
+.toast-close:hover {
+    opacity: 1;
+}
+
+/* Legacy Navbar Rules - Commented out to prevent conflict with styles.css capsule navbar
+.navbar {
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+.navbar.navbar-hidden {
+    transform: translateY(-100%);
+}
+
+.navbar.scrolled {
+    background: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+*/
+
+/* ==================== SCROLL REVEAL ANIMATIONS ==================== */
+.reveal-element {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.reveal-element.revealed {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ==================== CARD HOVER EFFECTS ==================== */
+.feature-card,
+.internship-card,
+.stat-card,
+.profile-card {
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+        box-shadow 0.3s ease;
+}
+
+.feature-card:hover,
+.internship-card:hover,
+.stat-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* ==================== BUTTON RIPPLE EFFECT ==================== */
+.ripple-effect {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.5);
+    transform: scale(0);
+    animation: ripple-animation 0.6s ease-out;
+    pointer-events: none;
+}
+
+@keyframes ripple-animation {
+    to {
+        transform: scale(4);
+        opacity: 0;
+    }
+}
+
+/* ==================== FADE IN UP ANIMATION ==================== */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ==================== SIDEBAR LINK HOVER ==================== */
+.sidebar-link {
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.sidebar-link::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 3px;
+    background: var(--primary, #3B82F6);
+    transform: scaleY(0);
+    transition: transform 0.3s ease;
+}
+
+.sidebar-link:hover::before,
+.sidebar-link.active::before {
+    transform: scaleY(1);
+}
+
+.sidebar-link:hover {
+    background: rgba(59, 130, 246, 0.08);
+    padding-left: 1.5rem;
+}
+
+/* ==================== INPUT FOCUS EFFECTS ==================== */
+.form-group {
+    transition: transform 0.2s ease;
+}
+
+.form-group.focused {
+    transform: scale(1.02);
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: var(--primary, #3B82F6);
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+}
+
+/* ==================== PROGRESS BAR ANIMATION ==================== */
+.progress-fill {
+    transition: width 1s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ==================== LOADING SPINNER ==================== */
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.fa-spin {
+    animation: spin 1s linear infinite;
+}
+
+/* ==================== STAT COUNTER ANIMATION ==================== */
+.stat-number {
+    transition: transform 0.3s ease;
+}
+
+.stat-number.counted {
+    animation: countPulse 0.5s ease;
+}
+
+@keyframes countPulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+/* ==================== MOBILE MENU ANIMATION ==================== */
+.mobile-menu {
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+        opacity 0.3s ease;
+    opacity: 0;
+    transform: translateY(-20px);
+}
+
+.mobile-menu.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ==================== SIDEBAR MOBILE ANIMATION ==================== */
+.sidebar {
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        transform: translateX(-100%);
+    }
+
+    .sidebar.active {
+        transform: translateX(0);
+    }
+}
+
+/* ==================== NOTIFICATION BADGE PULSE ==================== */
+.notification-badge {
+    animation: badgePulse 2s infinite;
+}
+
+@keyframes badgePulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+/* ==================== BUTTON HOVER STATES ==================== */
+.btn-primary,
+.btn-secondary,
+.btn-submit {
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.btn-primary:hover,
+.btn-submit:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(59, 130, 246, 0.35);
+}
+
+.btn-secondary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* ==================== ADVANCED BUTTON ANIMATIONS ==================== */
+
+@keyframes buttonEntrance {
+    0% {
+        opacity: 0;
+        transform: translateY(20px) scale(0.9);
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+@keyframes buttonPulseGlow {
+
+    0%,
+    100% {
+        box-shadow: 0 12px 35px rgba(59, 130, 246, 0.5), 0 0 40px rgba(139, 92, 246, 0.3), inset 0 0 20px rgba(255, 255, 255, 0.2);
+    }
+
+    50% {
+        box-shadow: 0 15px 45px rgba(59, 130, 246, 0.7), 0 0 60px rgba(139, 92, 246, 0.5), inset 0 0 30px rgba(255, 255, 255, 0.3);
+    }
+}
+
+@keyframes buttonGradientShift {
+    0% {
+        background: linear-gradient(135deg, #3B82F6 0%, #2563EB 100%);
+    }
+
+    25% {
+        background: linear-gradient(135deg, #2563EB 0%, #8B5CF6 100%);
+    }
+
+    50% {
+        background: linear-gradient(135deg, #8B5CF6 0%, #3B82F6 100%);
+    }
+
+    75% {
+        background: linear-gradient(135deg, #3B82F6 0%, #2563EB 100%);
+    }
+
+    100% {
+        background: linear-gradient(135deg, #3B82F6 0%, #2563EB 100%);
+    }
+}
+
+@keyframes shimmerFlow {
+    0% {
+        left: -100%;
+    }
+
+    100% {
+        left: 100%;
+    }
+}
+
+@keyframes buttonClick {
+    0% {
+        transform: scale(1) translateY(0);
+    }
+
+    50% {
+        transform: scale(0.98) translateY(2px);
+        box-shadow: 0 4px 10px rgba(59, 130, 246, 0.3);
+    }
+
+    100% {
+        transform: scale(1) translateY(0);
+    }
+}
+
+@keyframes buttonWaveGlow {
+
+    0%,
+    100% {
+        box-shadow: 0 12px 35px rgba(59, 130, 246, 0.4), 0 0 30px rgba(139, 92, 246, 0.3);
+    }
+
+    50% {
+        box-shadow: 0 12px 40px rgba(139, 92, 246, 0.6), 0 0 50px rgba(59, 130, 246, 0.4), inset 0 0 15px rgba(139, 92, 246, 0.1);
+    }
+}
+
+@keyframes buttonBorderPulse {
+
+    0%,
+    100% {
+        border-color: #8B5CF6;
+    }
+
+    50% {
+        border-color: #3B82F6;
+        box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.2);
+    }
+}
+
+@keyframes borderWave {
+    0% {
+        background: linear-gradient(135deg, transparent 0%, rgba(59, 130, 246, 0.05) 50%, transparent 100%);
+        background-position: 0% 0%;
+    }
+
+    50% {
+        background: linear-gradient(135deg, rgba(139, 92, 246, 0.1) 0%, rgba(59, 130, 246, 0.1) 50%, rgba(139, 92, 246, 0.05) 100%);
+        background-position: 100% 100%;
+    }
+
+    100% {
+        background: linear-gradient(135deg, transparent 0%, rgba(59, 130, 246, 0.05) 50%, transparent 100%);
+        background-position: 0% 0%;
+    }
+}
+
+/* ==================== ULTRA ADVANCED ANIMATIONS ==================== */
+
+@keyframes ultraGlowPulse {
+    0% {
+        filter: drop-shadow(0 0 5px rgba(59, 130, 246, 0.3)) drop-shadow(0 0 10px rgba(139, 92, 246, 0.1));
+    }
+
+    25% {
+        filter: drop-shadow(0 0 15px rgba(59, 130, 246, 0.6)) drop-shadow(0 0 25px rgba(139, 92, 246, 0.4)) drop-shadow(0 0 40px rgba(59, 130, 246, 0.2));
+    }
+
+    50% {
+        filter: drop-shadow(0 0 25px rgba(139, 92, 246, 0.8)) drop-shadow(0 0 40px rgba(59, 130, 246, 0.6)) drop-shadow(0 0 60px rgba(139, 92, 246, 0.3));
+    }
+
+    75% {
+        filter: drop-shadow(0 0 15px rgba(59, 130, 246, 0.6)) drop-shadow(0 0 25px rgba(139, 92, 246, 0.4)) drop-shadow(0 0 40px rgba(59, 130, 246, 0.2));
+    }
+
+    100% {
+        filter: drop-shadow(0 0 5px rgba(59, 130, 246, 0.3)) drop-shadow(0 0 10px rgba(139, 92, 246, 0.1));
+    }
+}
+
+@keyframes multiLayerShadow {
+
+    0%,
+    100% {
+        box-shadow:
+            0 0 0 0 rgba(59, 130, 246, 0.7),
+            0 0 0 0 rgba(139, 92, 246, 0.5),
+            0 0 0 0 rgba(59, 130, 246, 0.3),
+            0 12px 35px rgba(59, 130, 246, 0.5);
+    }
+
+    50% {
+        box-shadow:
+            0 0 10px 5px rgba(59, 130, 246, 0),
+            0 0 20px 10px rgba(139, 92, 246, 0),
+            0 0 30px 15px rgba(59, 130, 246, 0),
+            0 15px 50px rgba(59, 130, 246, 0.7);
+    }
+}
+
+@keyframes rotateGradient {
+    0% {
+        background: linear-gradient(0deg, #3B82F6, #8B5CF6);
+    }
+
+    25% {
+        background: linear-gradient(90deg, #3B82F6, #8B5CF6);
+    }
+
+    50% {
+        background: linear-gradient(180deg, #3B82F6, #8B5CF6);
+    }
+
+    75% {
+        background: linear-gradient(270deg, #3B82F6, #8B5CF6);
+    }
+
+    100% {
+        background: linear-gradient(360deg, #3B82F6, #8B5CF6);
+    }
+}
+
+@keyframes rippleOut {
+    0% {
+        width: 0;
+        height: 0;
+        opacity: 1;
+    }
+
+    100% {
+        width: 300px;
+        height: 300px;
+        opacity: 0;
+    }
+}
+
+@keyframes textGlow {
+
+    0%,
+    100% {
+        text-shadow: 0 0 5px rgba(59, 130, 246, 0.5);
+    }
+
+    50% {
+        text-shadow: 0 0 20px rgba(139, 92, 246, 0.8), 0 0 30px rgba(59, 130, 246, 0.6);
+    }
+}
+
+@keyframes scaleRotate {
+    0% {
+        transform: scale(1) rotate(0deg);
+    }
+
+    50% {
+        transform: scale(1.05) rotate(5deg);
+    }
+
+    100% {
+        transform: scale(1) rotate(0deg);
+    }
+}
+
+@keyframes skewWave {
+
+    0%,
+    100% {
+        transform: skewX(0deg) translateY(0);
+    }
+
+    25% {
+        transform: skewX(-2deg) translateY(-3px);
+    }
+
+    50% {
+        transform: skewX(2deg) translateY(0);
+    }
+
+    75% {
+        transform: skewX(-2deg) translateY(3px);
+    }
+}
+
+@keyframes magneticPull {
+
+    0%,
+    100% {
+        letter-spacing: normal;
+        transform: translateY(0);
+    }
+
+    50% {
+        letter-spacing: 2px;
+        transform: translateY(-2px);
+    }
+}
+
+@keyframes chromaBurst {
+    0% {
+        background: linear-gradient(0deg, #3B82F6, #2563EB, #8B5CF6);
+        filter: hue-rotate(0deg);
+    }
+
+    25% {
+        background: linear-gradient(90deg, #3B82F6, #2563EB, #8B5CF6);
+        filter: hue-rotate(30deg);
+    }
+
+    50% {
+        background: linear-gradient(180deg, #3B82F6, #2563EB, #8B5CF6);
+        filter: hue-rotate(60deg);
+    }
+
+    75% {
+        background: linear-gradient(270deg, #3B82F6, #2563EB, #8B5CF6);
+        filter: hue-rotate(30deg);
+    }
+
+    100% {
+        background: linear-gradient(360deg, #3B82F6, #2563EB, #8B5CF6);
+        filter: hue-rotate(0deg);
+    }
+}
+
+.btn-primary:active,
+.btn-secondary:active,
+.btn-submit:active {
+    transform: translateY(0);
+}
+
+/* ==================== DISABLE ANIMATIONS ON LOW MOTION ==================== */
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* ==================== MOBILE OPTIMIZATIONS ==================== */
+@media (max-width: 768px) {
+
+    .feature-card:hover,
+    .internship-card:hover,
+    .stat-card:hover {
+        transform: none;
+    }
+
+    .reveal-element {
+        transform: translateY(15px);
+    }
+
+    .toast-notification {
+        left: 10px;
+        right: 10px;
+        max-width: none;
+    }
+}

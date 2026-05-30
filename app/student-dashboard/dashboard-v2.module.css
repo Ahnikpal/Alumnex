@@ -1,0 +1,132 @@
+.dashboardWrapper {
+    --bg-midnight: #030514;
+    --bg-navy: #060b26;
+    --cyan-primary: #00f2ff;
+    --purple-accent: #7551ff;
+    --glass-bg: rgba(255, 255, 255, 0.03);
+    --glass-border: rgba(255, 255, 255, 0.1);
+    --text-muted: #a0aec0;
+
+    background: var(--bg-midnight);
+    min-height: 100vh;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Animated Mesh Gradient Background */
+.animatedBg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    pointer-events: none;
+    background: radial-gradient(circle at 50% 50%, var(--bg-navy) 0%, var(--bg-midnight) 100%);
+}
+
+.orb {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(80px);
+    opacity: 0.15;
+    animation: move 20s infinite alternate ease-in-out;
+}
+
+.orb1 {
+    width: 40vw;
+    height: 40vw;
+    background: var(--cyan-primary);
+    top: -10vw;
+    right: -5vw;
+}
+
+.orb2 {
+    width: 35vw;
+    height: 35vw;
+    background: var(--purple-accent);
+    bottom: -10vw;
+    left: -5vw;
+    animation-delay: -5s;
+}
+
+@keyframes move {
+    from {
+        transform: translate(0, 0) scale(1);
+    }
+
+    to {
+        transform: translate(5vw, 5vh) scale(1.1);
+    }
+}
+
+/* Glassmorphism Styles */
+.glassCard {
+    background: var(--glass-bg);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid var(--glass-border);
+    border-radius: 24px;
+    padding: 24px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.statCard {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.statCard:hover {
+    background: rgba(255, 255, 255, 0.06);
+    border-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px -10px rgba(0, 242, 255, 0.2);
+}
+
+.iconBox {
+    width: 48px;
+    height: 48px;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.sidebarItem {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 16px;
+    border-radius: 12px;
+    color: var(--text-muted);
+    transition: all 0.2s ease;
+    margin-bottom: 4px;
+}
+
+.sidebarItem:hover {
+    background: rgba(255, 255, 255, 0.05);
+    color: white;
+}
+
+.sidebarActive {
+    background: rgba(0, 242, 255, 0.1);
+    color: var(--cyan-primary);
+    border: 1px solid rgba(0, 242, 255, 0.2);
+}
+
+/* Profile Strength SVG */
+.progressRing {
+    transform: rotate(-90deg);
+}
+
+.progressRingCircle {
+    transition: stroke-dashoffset 0.5s ease;
+    stroke: var(--cyan-primary);
+    filter: drop-shadow(0 0 8px var(--cyan-primary));
+}
